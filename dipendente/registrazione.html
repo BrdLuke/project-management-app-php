@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione - Dipendente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Registrazione</h1>
+        <br>
+        <form method="POST" action="registrazione_script.php">
+            <div class="input">
+                <p>Codice fiscale: </p>
+                <input type="text" name="cf" id="cf" maxlength="16" minlength="16">
+            </div>
+
+            <div class="input">
+                <p>Cognome: </p>
+                <input type="text" name="cognome" id="cognome" maxlength="30">
+            </div>
+
+            <div class="input">
+                <p>Nome: </p>
+                <input type="text" name="nome" id="nome" maxlength="30">
+            </div>
+
+            <div class="input">
+                <p>Numero di telefono: </p>
+                <input type="text" name="num_tel" id="num_tel" maxlength="10">
+            </div>
+
+            <div class="input">
+                <p>Email: </p>
+                <input type="email" name="email" id="email" maxlength="30">
+            </div>
+
+            <div class="input">
+                <p>Skills: </p>
+                <input type="skills" name="skills" id="skills" maxlength="255">
+            </div>
+
+            <div class="input">
+                <p>Password: </p>
+                <input type="password" name="password" id="password" maxlength="255">
+            </div>
+
+            <button>Registrati</button>
+            <p style="font-style: italic;">Sei già un dipendente? <a href="./login.html">Login</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>

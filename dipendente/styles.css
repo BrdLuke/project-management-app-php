@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #00b3a7;
+
+}
+
+nav .nav-elements ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+nav .logo img {
+    display: block;
+    max-width: 20%;
+    height: auto;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+#logout {
+    padding: 0.5rem;
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+#logout:hover {
+    background-color: #000000;
+    color: white;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.container {
+    width: 50%;
+    max-width: 40rem;
+    background: #aaaaaa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input p {
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
+.input input,
+.input select:focus {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #d2d7da;
+    color: black;
+}
+
+.input input:focus,
+.input select:focus {
+    outline: none;
+    border: 1px solid #0d5894;
+    background: #d2d7da;
+}
+
+.input button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button {
+    padding: 0.8rem;
+    width: 10rem;
+    border: none;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#registrazione {
+    background-color: white;
+}
+
+#modifica_dati {
+    background-color: #e5e6e4;
+}
+
+#modifica_dati:hover {
+    background-color: #e5e6e491;
+}
+
+button:hover {
+    background: #dddddd;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #191919;
+}
+
+.container-progetti {
+    max-width: 50rem;
+    background: #a6a2a2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    color: whitesmoke;
+}
+
+section {
+    margin-top: 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fbfbf2;
+    color: black;
+    box-shadow: #0d5894 2px 2px 2px 2px;
+}
+
+.progetto-body {
+    padding: 24px;
+}
+
+.progetti {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+}
+
+h2 {
+    color: black;
+    transition: 1s;
+}
+
+h2:hover {
+    color: rgb(170, 6, 6);
+}
+
+.info-progetto {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.box {
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    margin-left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.input select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #d2d7da;
+    color: black;
+    width: 100%;
+}
+
+.input select:focus {
+    outline: none;
+    border: 1px solid #0d5894;
+    background: #d2d7da;
+}
+
+.progetto_buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.progetto_buttons button {
+    width: 50%;
+}
+
+#edit_progetto {
+    background-color: #fcdc4d;
+}
+
+#edit_progetto:hover {
+    background-color: #fcdc4da7;
+}
+
+#delete_progetto {
+    background-color: #ad2831;
+    color: white;
+}
+
+#delete_progetto:hover {
+    background-color: #ad2831c3;
+}
+
+.modal-container {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    padding-top: 10rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.confirmation-message {
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #383838;
+}
+
+.delete-button {
+    background-color: #f13b27;
+    color: #fff;
+}
+
+.cancel-button:hover {
+    background-color: #cccccca3;
+}
+
+.delete-button:hover {
+    background-color: #e74d3cd9;
+}

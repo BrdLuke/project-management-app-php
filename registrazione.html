@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Registrazione</h1>
+        <br>
+        <form method="POST" action="registrazione_script.php">
+            <div class="input">
+                <p>Cognome: </p>
+                <input type="text" name="cognome" id="cognome" maxlength="30">
+            </div>
+
+            <div class="input">
+                <p>Nome: </p>
+                <input type="text" name="nome" id="nome" maxlength="30">
+            </div>
+
+            <div class="input">
+                <p>Email: </p>
+                <input type="email" name="email" id="email" maxlength="30">
+            </div>
+
+            <div class="input">
+                <p>Password: </p>
+                <input type="password" name="password" id="password" maxlength="255">
+            </div>
+
+            <button id="registrazione">Registrati</button>
+            <p style="font-style: italic;">Hai già un account? <a href="./login.html">Login</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>
